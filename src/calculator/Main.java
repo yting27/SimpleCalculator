@@ -13,7 +13,7 @@ public class Main extends Application {
         Parent root = FXMLLoader.load(getClass().getResource("mainWindow.fxml"));
         primaryStage.setTitle("My Calculator");
         primaryStage.setScene(new Scene(root,  280, 330));
-        primaryStage.getIcons().setAll(new Image("File:/Users/ngyen/IdeaProjects/Calculator/calculator.png"));
+        primaryStage.getIcons().setAll(new Image(Main.class.getResourceAsStream("../calculator.png")));
         primaryStage.show();
     }
 
